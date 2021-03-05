@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class PregledRacunaPoMj extends javax.swing.JFrame {
 SQLRacun sqlRacun = new SQLRacun();
