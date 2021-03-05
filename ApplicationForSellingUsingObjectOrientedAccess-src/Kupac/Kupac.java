@@ -7,7 +7,7 @@ package Kupac;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class Kupac {
     int sifraKupca;
