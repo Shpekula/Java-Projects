@@ -9,7 +9,7 @@ package Racuni;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class Racun {
     int sifraRacuna;
