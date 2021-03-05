@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class AzuriranjePDV extends javax.swing.JFrame {
 SQLPDV sqlPDV = new SQLPDV();
