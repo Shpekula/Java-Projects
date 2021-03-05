@@ -10,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class IzvjestajKupac extends javax.swing.JFrame {
     SQLKupac sqlKupac = new SQLKupac();
