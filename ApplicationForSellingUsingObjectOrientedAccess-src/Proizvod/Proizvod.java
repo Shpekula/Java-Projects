@@ -7,7 +7,7 @@ package Proizvod;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class Proizvod {
     int sifraProizvoda;
