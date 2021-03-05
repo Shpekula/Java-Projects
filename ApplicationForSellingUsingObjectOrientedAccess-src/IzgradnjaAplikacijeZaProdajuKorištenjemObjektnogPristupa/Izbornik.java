@@ -15,7 +15,7 @@ import Racuni.PregledRacuna;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class Izbornik extends javax.swing.JFrame {
     IzbornikProizvoda izbornikProizvoda = new IzbornikProizvoda();
