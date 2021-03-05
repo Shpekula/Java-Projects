@@ -7,7 +7,7 @@ package Racuni;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class Stavka {
     int sifraStavke;
