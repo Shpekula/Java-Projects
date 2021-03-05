@@ -7,7 +7,7 @@ package IzgradnjaAplikacijeZaProdajuKorištenjemObjektnogPristupa;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class Controller {
     
