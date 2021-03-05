@@ -7,7 +7,7 @@ package Kupac;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class IzbornikKupac extends javax.swing.JFrame {
 AzuriranjeKupca azuriranje = new AzuriranjeKupca();
