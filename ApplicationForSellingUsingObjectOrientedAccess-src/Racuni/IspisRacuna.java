@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import javax.swing.table.DefaultTableModel;
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class IspisRacuna extends javax.swing.JFrame {
 SQLRacun sqlRacun = new SQLRacun();
