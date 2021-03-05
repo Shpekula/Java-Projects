@@ -20,8 +20,7 @@ public class SQLPDV {
     public void spremi(PDV pdv){
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             String sql = "INSERT INTO PDV (Sifra_PDV, Postotak) VALUES(?,?);";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, pdv.getSifraPDV());
@@ -39,8 +38,7 @@ public class SQLPDV {
         ArrayList<PDV> popisPDV = new ArrayList<PDV>();
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
                 String sql = "SELECT * FROM PDV;";               
                 
                 //PreparedStatement stmt = conn.prepareStatement(sql);
