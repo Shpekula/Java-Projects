@@ -11,7 +11,7 @@ import IzgradnjaAplikacijeZaProdajuKorištenjemObjektnogPristupa.Controller;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class AzuriranjeKupca extends javax.swing.JFrame {
 Controller controll = new Controller();
