@@ -13,7 +13,7 @@ import javax.swing.Timer;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class AzuriranjeProizvoda extends javax.swing.JFrame {
 SQLProizvod sqlProizvod = new SQLProizvod();
