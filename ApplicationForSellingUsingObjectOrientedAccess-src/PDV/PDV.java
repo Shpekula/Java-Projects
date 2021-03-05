@@ -7,7 +7,7 @@ package PDV;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class PDV {
     int sifraPDV;
