@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class SQLPDV {
     public void spremi(PDV pdv){
