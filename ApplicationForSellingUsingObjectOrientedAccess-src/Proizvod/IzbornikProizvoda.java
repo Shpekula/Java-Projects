@@ -7,7 +7,7 @@ package Proizvod;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class IzbornikProizvoda extends javax.swing.JFrame {
 //Izbornik izbornik = new Izbornik();
