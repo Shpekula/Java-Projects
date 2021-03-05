@@ -17,7 +17,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class SQLRacun {
     int SifraR=0;
@@ -35,8 +35,7 @@ SQLKupac sqlKupac = new SQLKupac();
         public void spremi(Racun racun){
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             String sql = "INSERT INTO Racun (Sifra_racuna, Datum, Sifra_kupca, Cijena_racuna) VALUES(?,?,?,?);";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, racun.getSifraRacuna());
@@ -57,8 +56,7 @@ SQLKupac sqlKupac = new SQLKupac();
         ArrayList<Racun> popisRacuna = new ArrayList<Racun>();
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             String sql = "SELECT * FROM Racun;";
           
             //PreparedStatement stmt = conn.prepareStatement(sql);
@@ -98,8 +96,7 @@ SQLKupac sqlKupac = new SQLKupac();
         
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             
             String sql = "SELECT * FROM Racun WHERE Sifra_racuna ="+SifraR+";";  
             
@@ -132,8 +129,7 @@ SQLKupac sqlKupac = new SQLKupac();
             
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             String sql = "DELETE FROM Racun WHERE Sifra_racuna = "+racun.getSifraRacuna()+";";
             PreparedStatement stmt = conn.prepareStatement(sql);
             
@@ -150,8 +146,7 @@ SQLKupac sqlKupac = new SQLKupac();
             
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             String sql = "UPDATE Racun SET Cijena_racuna ='"+racun.getCijenaRacuna() +"'WHERE Sifra_racuna = "+racun.getSifraRacuna()+";";
             PreparedStatement stmt = conn.prepareStatement(sql);
             
