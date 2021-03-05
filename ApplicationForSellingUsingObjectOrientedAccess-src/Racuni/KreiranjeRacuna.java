@@ -23,7 +23,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class KreiranjeRacuna extends javax.swing.JFrame {
 SQLKupac sqlKupac = new SQLKupac();
