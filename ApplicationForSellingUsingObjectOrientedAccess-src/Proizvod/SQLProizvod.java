@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class SQLProizvod {
     
@@ -40,8 +40,7 @@ public class SQLProizvod {
      public void spremi(Proizvod proizvod){
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
             String sql = "INSERT INTO Proizvod (Sifra_proizvoda,Naziv_proizvoda,Cijena_proizvoda, Kolicina_proizvoda) VALUES(?,?,?,?);";
             PreparedStatement stmt = conn.prepareStatement(sql);
             stmt.setInt(1, proizvod.getSifraProizvoda());
@@ -61,8 +60,7 @@ public class SQLProizvod {
         ArrayList<Proizvod> popisProizvoda = new ArrayList<Proizvod>();
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
                 String sql = "SELECT * FROM Proizvod;";               
                 
                 Statement stmt = conn.createStatement();
@@ -92,8 +90,7 @@ public class SQLProizvod {
         ArrayList<Proizvod> popisProizvoda = new ArrayList<Proizvod>();
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-            Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                    "tsimurda","11");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://");
                 String sql = "SELECT * FROM Proizvod WHERE Sifra_Proizvoda = "+sifraA+";";          
                 
                 Statement stmt = conn.createStatement();
@@ -122,8 +119,7 @@ public class SQLProizvod {
             
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-              try (Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                      "tsimurda","11")) {
+              try (Connection conn = DriverManager.getConnection("jdbc:mysql://")) {
                   String sql = "DELETE FROM Proizvod WHERE Sifra_proizvoda = "+proizvod.getSifraProizvoda()+";";
                   PreparedStatement stmt = conn.prepareStatement(sql);
                   
@@ -140,8 +136,7 @@ public class SQLProizvod {
             
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-              try (Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                      "tsimurda","11")) {
+              try (Connection conn = DriverManager.getConnection("jdbc:mysql://")) {
                   String sql = "UPDATE Proizvod SET Kolicina_proizvoda = '"+proizvod.getKolicinaProizvoda()+"'WHERE Sifra_proizvoda = "+proizvod.getSifraProizvoda()+";";
                   PreparedStatement stmt = conn.prepareStatement(sql);
                   
@@ -157,8 +152,7 @@ public class SQLProizvod {
             
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
-              try (Connection conn = DriverManager.getConnection("jdbc:mysql://ucka.veleri.hr/tsimurda",
-                      "tsimurda","11")) {
+              try (Connection conn = DriverManager.getConnection("jdbc:mysql://")) {
                   String sql = "UPDATE Proizvod SET Naziv_proizvoda = '"+proizvod.getNazivProizvoda()+"',Cijena_proizvoda = '"+proizvod.getCijenaProizvoda()+"',Kolicina_proizvoda = '"+proizvod.getKolicinaProizvoda()+"'WHERE Sifra_proizvoda = "+proizvod.getSifraProizvoda()+";";
                   PreparedStatement stmt = conn.prepareStatement(sql);
                   
