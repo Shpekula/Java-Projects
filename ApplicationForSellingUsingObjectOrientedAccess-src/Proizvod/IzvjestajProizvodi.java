@@ -10,7 +10,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class IzvjestajProizvodi extends javax.swing.JFrame {
     
