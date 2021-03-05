@@ -7,7 +7,7 @@ package Racuni;
 
 /**
  *
- * @author Freeware Sys
+ * @author Shpekula
  */
 public class PregledRacuna extends javax.swing.JFrame {
 PregledRacunaPoMj pregled = new PregledRacunaPoMj();
